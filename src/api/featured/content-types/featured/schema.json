@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featureds",
+  "info": {
+    "singularName": "featured",
+    "pluralName": "featureds",
+    "displayName": "Featured"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nft_token_a": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft-token.nft-token"
+    },
+    "nft_token_b": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft-token.nft-token"
+    },
+    "nft_token_c": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft-token.nft-token"
+    },
+    "nft_token_d": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft-token.nft-token"
+    }
+  }
+}

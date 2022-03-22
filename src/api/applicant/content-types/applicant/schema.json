@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applicants",
+  "info": {
+    "singularName": "applicant",
+    "pluralName": "applicants",
+    "displayName": "Applicant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "description": {
+      "type": "text"
+    },
+    "polygon_address": {
+      "type": "uid"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "cloud_storage_link": {
+      "type": "string"
+    },
+    "other_relative_info": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approve",
+        "decline"
+      ]
+    },
+    "nft_tokens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nft-token.nft-token",
+      "mappedBy": "applicant"
+    }
+  }
+}

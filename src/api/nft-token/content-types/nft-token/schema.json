@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nft_tokens",
+  "info": {
+    "singularName": "nft-token",
+    "pluralName": "nft-tokens",
+    "displayName": "NFT token",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "string"
+    },
+    "otherfiles": {
+      "type": "text"
+    },
+    "available_on": {
+      "type": "string"
+    },
+    "number_of_parcels": {
+      "type": "string"
+    },
+    "token_id": {
+      "type": "uid"
+    },
+    "applicant": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::applicant.applicant",
+      "inversedBy": "nft_tokens"
+    },
+    "display": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
