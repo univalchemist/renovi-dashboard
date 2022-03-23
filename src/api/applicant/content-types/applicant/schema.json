@@ -40,8 +40,8 @@
       "type": "enumeration",
       "enum": [
         "pending",
-        "approve",
-        "decline"
+        "approved",
+        "declined"
       ]
     },
     "nft_tokens": {
