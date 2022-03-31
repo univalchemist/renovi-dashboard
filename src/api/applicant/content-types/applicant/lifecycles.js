@@ -8,6 +8,8 @@ module.exports = {
     async beforeUpdate(event) {
         const {full_name, status, email } = event.params.data;
 
+        console.log(full_name, status, email);
+
         if (status === 'approved') {
           await strapi.plugins['email'].services.email.send({
             to: email,

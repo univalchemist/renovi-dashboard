@@ -13,7 +13,7 @@ module.exports = createCoreController('api::applicant.applicant', ({ strapi }) =
         const response = await super.create(ctx);
         console.log("ctx :: ", ctx);
         // some more logic
-      
+
         return response;
       },
 
@@ -22,7 +22,7 @@ module.exports = createCoreController('api::applicant.applicant', ({ strapi }) =
         const response = await super.update(ctx);
         console.log("ctx :: ", ctx);
         // some more logic
-      
+
         return response;
       }
 
