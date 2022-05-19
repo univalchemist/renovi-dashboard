@@ -45,6 +45,23 @@
     "display": {
       "type": "boolean",
       "default": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Sale",
+        "NotSale"
+      ],
+      "default": "Sale"
+    },
+    "price_in_matic": {
+      "type": "decimal"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::applicant.applicant",
+      "inversedBy": "owned_nft_tokens"
     }
   }
 }

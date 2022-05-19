@@ -49,6 +49,21 @@
       "relation": "oneToMany",
       "target": "api::nft-token.nft-token",
       "mappedBy": "applicant"
+    },
+    "owned_nft_tokens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nft-token.nft-token",
+      "mappedBy": "owner"
+    },
+    "categories": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
     }
   }
 }
