@@ -7,8 +7,8 @@ module.exports = ({ env }) => ({
           apiKey: env('SENDGRID_API_KEY'),
         },
         settings: {
-          defaultFrom: 'mojodigital13@gmail.com',
-          defaultReplyTo: 'hello@mojodigital.io',
+          defaultFrom: 'info@renovi.io',
+          defaultReplyTo: 'info@renovi.io',
         },
       },
     },
